@@ -19,7 +19,7 @@ Bitaka is a free web shop which offers opportunity to view and upload advertisem
 * **Filtering Products-** If you want, you can use search form, 
 which filters products based on their name and description. It's possible for you to select
  from the drop down list a category and make your search easier.
-* **Admin Panel-**
+* **Admin Panel-** Whit this AdminPanel an account with admin authorization can change and delete all existing products. It can be access through the navigation for Products.
 
 
 ## Contributors
@@ -32,7 +32,7 @@ which filters products based on their name and description. It's possible for yo
 * **:tiger: [SolidOcelot]** (https://github.com/SolidOcelot)
 * **:monkey_face: [IcoResponsiva]** (https://github.com/IcoResponsiva)
 * **:mouse: [SissYo]** (https://github.com/SissYo)
-* **:frog: [Barcafan95]** (https://github.com/Barcafan95)
+* **:ghost: [Barcafan95]** (https://github.com/Barcafan95)
 * **:cat: [megayra]** (https://github.com/megayra)
 
 
