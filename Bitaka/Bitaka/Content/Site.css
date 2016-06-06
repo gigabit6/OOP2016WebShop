@@ -40,3 +40,83 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+ul li{
+    color:darkslategray;
+    font-size:20px;
+    font-family:Broadway;
+}
+.navbar-brand{
+    font-family:Broadway;
+    font-size:30px;
+    color:darkkhaki;
+}
+.element {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    height: 70px;
+    position: relative;
+}
+.element {
+    *display: inline;
+}
+.horiz-flag {
+    background-image: linear-gradient(#480000 , #280000 );
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    height: 45px;
+    line-height: 50px;
+    position: absolute;
+    padding-right: 20px;
+    left: -2px;
+    padding-left: 5px;
+    top: 1px;
+    color: #fff;
+    
+}
+.horiz-flag {
+    *display: inline;
+}
+.horiz-flag:before {
+    content: " ";
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 20px;
+    border-color: transparent;
+    border-right-color: #FFFACD;
+    position: absolute;
+    right: -4px;
+    top: 0;
+}
+ ul li{
+  
+  margin-left:150px;
+}
+
+.container{
+    background-color:#FFFACD;
+    border:2px solid grey;
+    width:90%;
+    border-radius:10px;
+    
+}
+ul li:hover{
+    background-color:#800000;
+    border-radius:10px;
+}
+.col-md-4{
+    top:50px;
+}
+.jumbotron {
+    margin-top:100px;
+}
+.table table-inverse{
+    margin-top:20px;
+}
+
+h2{
+    margin-top:120px;
+}
