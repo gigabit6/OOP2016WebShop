@@ -40,6 +40,7 @@ namespace Bitaka.Migrations
                         FullName = c.String(),
                         Address = c.String(),
                         Phone = c.String(),
+                        HasAvatar = c.Boolean(),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id);

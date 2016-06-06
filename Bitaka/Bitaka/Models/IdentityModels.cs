@@ -18,6 +18,8 @@ namespace Bitaka.Models
         public string Phone { get; set; }
         public virtual ICollection<Products> Products { get; set; }
         public virtual ShoppingCart ShopingCart { get; set; }
+
+        public bool HasAvatar { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

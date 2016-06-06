@@ -13,7 +13,7 @@ namespace Bitaka.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201605201009397_AddEmail"; }
+            get { return "201606061650268_Products"; }
         }
         
         string IMigrationMetadata.Source

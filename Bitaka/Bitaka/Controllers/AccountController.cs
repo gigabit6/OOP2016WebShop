@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using Bitaka.Models;
 using Microsoft.AspNet.Identity.Owin;
+using System.Web.Hosting;
 
 namespace Bitaka.Controllers
 {
@@ -69,6 +70,19 @@ namespace Bitaka.Controllers
         public ActionResult Register()
         {
             return View();
+        }
+
+        internal static bool SaveAvatar(ApplicationUser user, HttpPostedFileBase file)
+        {
+            if (file == null || file.ContentLength <= 0 || file.ContentLength > MAX_LENGTH)
+                return false;
+
+            //I think I should convert the file somehow instead of saving it
+            var path = HostingEnvironment.MapPath("~/Bitaka/images") + string.Format("{0}.png", user.UserName);
+            file.SaveAs(path);
+            user.HasAvatar = true;
+
+            return true;
         }
 
         //
@@ -501,5 +515,7 @@ namespace Bitaka.Controllers
             }
         }
         #endregion
+
+        public static int MAX_LENGTH { get; set; }
     }
 }
